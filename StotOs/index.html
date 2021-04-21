@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="../header.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="database.js"></script>
   <link rel="icon" href="Billeder/PenisAvatar.jpg" type="image/gif" sizes="16x16">
 
 <body>
@@ -31,10 +33,10 @@
       </div>
     
       <div class="container" style="background-color:white">
-        <input type="text" placeholder="Navn" name="name" required>
-        <input type="text" placeholder="Email" name="mail" required>
+        <input id="name" type="text" placeholder="Navn" name="name" required>
+        <input id="mail" type="text" placeholder="Email" name="mail" required>
         <label>
-          <input type="checkbox" checked="checked" name="subscribe"> Modtag også Tilbud!
+          <input type="checkbox" checked="checked" name="offer"> Modtag også Tilbud!
         </label>
       </div>
     
