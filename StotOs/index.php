@@ -42,7 +42,7 @@
     
       <div class="container" style="background-color:white">
         <input id="name" type="text" placeholder="Navn" name="name">
-        <input id="mail" type="text" placeholder="Email" name="mail">
+        <input id="mail" type="email" placeholder="Email" name="mail">
         <label>
           <!-- <input type="checkbox" checked="checked" name="offer"> Modtag også Tilbud! -->
         </label>
