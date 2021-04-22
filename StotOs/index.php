@@ -34,7 +34,7 @@
     </div>
 
 
-    <form action="action_page.php" method="post">
+    <form action="action_page.php" method="post" enctype="multipart/form-data">
       <div class="container">
         <h2>Abonnér på vores nyhedsbrev!</h2>
         <p>Månedlige mails der kan afmeldes på et sekund</p>
