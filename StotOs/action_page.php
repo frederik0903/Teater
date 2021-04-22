@@ -7,7 +7,7 @@
     $new_offer = $_REQUEST['offer'];
 
 
-    $sql = "INSERT INTO teater (name, mail, offer) VALUES ( ?, ?, ?)";
+    $sql = "INSERT INTO nyhedsbrev (name, mail, offer) VALUES ( ?, ?, ?)";
     $stmt = mysqli_stmt_init($mysqli);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
