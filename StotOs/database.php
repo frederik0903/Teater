@@ -1,27 +1,19 @@
-<?php 
-$user = "";  
-$password = "";  
-$host = "localhost";  
-$dbase = "teater";  
-$table = "nyhedsbrev";  
- 
-$name= $_POST['name']; 
-$mail= $_POST['mail']; 
-$offer= $_POST['offer']; 
-  
-  
-// Connection to DBase  
-$dbc= mysqli_connect($host,$user,$password, $dbase)  
-or die("Unable to select database"); 
- 
- 
-$query= "INSERT INTO $table  ". "VALUES ('$name', '$mail', '$offer')"; 
- 
-mysqli_query ($dbc, $query) 
-or die ("Error querying database"); 
- 
-echo 'You have been successfully added.' . '<br>'; 
- 
-mysqli_close($dbc); 
- 
-?> 
+<?php
+//Information om database, så en forbindelse kan skabes mellem php database og vores hjemmeside form. 
+    $server = "localhost";
+    $username = "root";
+    $password = "";
+    $name = "teater";
+    
+    /* Attempt to connect to MySQL database */
+    $mysqli = new mysqli($server, $username, $password, $name);
+    
+    // Check connection
+    if($mysqli === false){
+        die("ERROR: Could not connect. " . $mysqli->connect_error);
+    }
+    
+
+
+    
+?>

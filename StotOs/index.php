@@ -1,7 +1,15 @@
+<?php
+    // Initialize the session
+    session_start();
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
+ 
   
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="../header.css">
@@ -26,7 +34,7 @@
     </div>
 
 
-    <form action="action_page.php">
+    <form action="action_page.php" method="post">
       <div class="container">
         <h2>Abonnér på vores nyhedsbrev!</h2>
         <p>Månedlige mails der kan afmeldes på et sekund</p>
