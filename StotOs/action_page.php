@@ -4,7 +4,7 @@
 
     $new_name = $mysqli->real_escape_string($_REQUEST['name']);
     $new_mail = $mysqli->real_escape_string($_REQUEST['mail']);
-    $new_offer = $_REQUEST['offer'];
+   // $new_offer = $_REQUEST['offer'];
 
 
     $sql = "INSERT INTO nyhedsbrev (name, mail) VALUES ( ?, ?)";
