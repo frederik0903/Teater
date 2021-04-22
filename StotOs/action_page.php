@@ -1,6 +1,6 @@
 <?php
 
-    require_once "DbFunctions.php";
+    require_once "database.php";
 
     $new_name = $mysqli->real_escape_string($_REQUEST['name']);
     $new_mail = $mysqli->real_escape_string($_REQUEST['mail']);
